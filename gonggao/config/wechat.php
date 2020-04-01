@@ -16,8 +16,8 @@ return [
     /*
      * 账号基本信息，请从微信公众平台/开放平台获取
      */
-    'app_id'  => env('WECHAT_APPID', 'wx06fc78426b3ecffb'),         // AppID
-    'secret'  => env('WECHAT_SECRET', '0fcd6ed283844563fb04b09dbcc09a0a'),     // AppSecret
+    'app_id'  => env('WECHAT_APPID', ''),         // AppID
+    'secret'  => env('WECHAT_SECRET', ''),     // AppSecret
     'token'   => env('WECHAT_TOKEN', 'weixin'),          // Token
     'aes_key' => env('WECHAT_AES_KEY', ''),                    // EncodingAESKey
 
@@ -83,10 +83,10 @@ return [
      * 微信支付
      */
     'payment' => [
-        'merchant_id'        => env('WECHAT_PAYMENT_MERCHANT_ID', '1443447202'),
-        'key'                => env('WECHAT_PAYMENT_KEY', '82b4f514a751e5e8467485d89e0846dd'),
-        'cert_path'          => env('WECHAT_PAYMENT_CERT_PATH', 'path/to/your/cert.pem'), // XXX: 绝对路径！！！！
-        'key_path'           => env('WECHAT_PAYMENT_KEY_PATH', 'path/to/your/key'),      // XXX: 绝对路径！！！！
+        'merchant_id'        => env('WECHAT_PAYMENT_MERCHANT_ID', ''),
+        'key'                => env('WECHAT_PAYMENT_KEY', ''),
+        'cert_path'          => env('WECHAT_PAYMENT_CERT_PATH', ''), // XXX: 绝对路径！！！！
+        'key_path'           => env('WECHAT_PAYMENT_KEY_PATH', ''),      // XXX: 绝对路径！！！！
         // 'device_info'     => env('WECHAT_PAYMENT_DEVICE_INFO', ''),
         // 'sub_app_id'      => env('WECHAT_PAYMENT_SUB_APP_ID', ''),
         // 'sub_merchant_id' => env('WECHAT_PAYMENT_SUB_MERCHANT_ID', ''),
@@ -107,6 +107,6 @@ return [
         'province' => '北京',
         'city' => '北京',
         'country' => '中国',
-        'headimgurl' => 'http://wx.qlogo.cn/mmopen/C2rEUskXQiblFYMUl9O0G05Q6pKibg7V1WpHX6CIQaic824apriabJw4r6EWxziaSt5BATrlbx1GVzwW2qjUCqtYpDvIJLjKgP1ug/0',
+        'headimgurl' => '',
     ],
 ];
